@@ -1,73 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Major</title>
-  <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A visual showcase of my academic journey from fine art to digital design and information design." />
+  <meta name="author" content="Lian Duan" />
+  <meta name="keywords" content="Fine Art, Graphic Design, Information Design, Academic Journey, Portfolio" />
+
+  <title>My Major - From Fine Art to Digital Design</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <!-- Custom JS -->
+  <script src="js/modal.js" defer></script>
 </head>
+
 <body>
-  <div class="container">
-   <header>
-    <nav class="responsive-nav">
-      <ul>
-          <li><img src="imgs/FaviconLogo.png" alt="Logo" class="logo"></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="my_journey.html">My Journey</a></li>
-          <li><a href="timeline.html">Time Line</a></li>
-          <li><a href="my_major.html">My Major</a></li>
-        </ul>
-      </nav>
-    </header>
+  <div class="site-wrapper">
 
-    <main>
-      <h1>From Fine Art to Digital Design: A Journey of Growth</h1>
-      <section id="major">
-        <div class="image-gallery">   
-          <img src="imgs/fa.png" class="gallery-img" alt="Fine Arts" 
-          data-bs-toggle="modal" data-bs-target="#imageModal" 
-          data-group="gallery-fa">
+    <div class="container">
+      <header>
+        <nav class="responsive-nav" aria-label="Main Navigation">
+          <ul>
+            <li>
+              <a href="index.html">
+                <img src="imgs/FaviconLogo.png" alt="Site Logo" class="logo" />
+              </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my_journey.html">My Journey</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="my_major.html">My Major</a></li>
+          </ul>
+        </nav>
+      </header>
 
-          <img src="imgs/gd.png" class="gallery-img" alt="Graphic Design" 
-          data-bs-toggle="modal" data-bs-target="#imageModal" 
-          data-group="gallery-gd">
+      <main>
+        <h1>From Fine Art to Digital Design: A Journey of Growth</h1>
 
-          <img src="imgs/idt.png" class="gallery-img" alt="Information Design" 
-          data-bs-toggle="modal" data-bs-target="#imageModal" 
-          data-group="gallery-idt">
-        </div>
-      </section>
-    </main>
+        <section id="major">
+          <div class="image-gallery">
+            <img
+              src="imgs/fa.png"
+              class="gallery-img"
+              alt="Fine Arts"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-group="gallery-fa"
+            />
+
+            <img
+              src="imgs/gd.png"
+              class="gallery-img"
+              alt="Graphic Design"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-group="gallery-gd"
+            />
+
+            <img
+              src="imgs/idt.png"
+              class="gallery-img"
+              alt="Information Design"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              data-group="gallery-idt"
+            />
+          </div>
+        </section>
+      </main>
+    </div>
 
     <footer>
-      <p>Thank you for taking the time to explore my project!</p>
+      <p>&copy; 2025 Lian Duan. All rights reserved.</p>
     </footer>
-  </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="imageModalLabel">Relative Projects</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-          <img src="" id="modalImage" class="img-fluid" alt="Preview">
-          <p id="modalDescription" class="mt-3"></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" id="prevImage">Previous</button>
-          <button type="button" class="btn btn-secondary" id="nextImage">Next</button>
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel">Related Projects</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body text-center">
+            <img src="" id="modalImage" class="img-fluid" alt="Preview" />
+            <p id="modalDescription" class="mt-3"></p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="prevImage">Previous</button>
+            <button type="button" class="btn btn-secondary" id="nextImage">Next</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- 引入 JavaScript 文件 -->
-  <script src="js/modal.js"></script>
+  </div>
 </body>
 </html>

@@ -6,9 +6,9 @@
   <meta name="description" content="A timeline showcasing key milestones in my journey, including educational and personal achievements." />
   <meta name="author" content="Lian Duan" />
   <meta name="keywords" content="Timeline, Milestones, Journey, Education, Achievements" />
-  
+
   <title>Timeline - Milestones of My Journey</title>
-  
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
 
@@ -24,27 +24,27 @@
 
 <body>
   <div class="site-wrapper">
+
     <div class="container">
       <header>
         <nav class="responsive-nav" aria-label="Main Navigation">
-          <div class="d-flex justify-content-between align-items-center flex-wrap">
-            <div class="logo-container d-flex align-items-center">
+          <ul>
+            <li>
               <a href="index.html">
                 <img src="imgs/FaviconLogo.png" alt="Site Logo" class="logo" />
               </a>
-            </div>
-            <ul class="d-flex flex-wrap list-unstyled m-0 p-0">
-              <li class="mx-2"><a href="index.html">Home</a></li>
-              <li class="mx-2"><a href="my_journey.html">My Journey</a></li>
-              <li class="mx-2"><a href="timeline.html">Timeline</a></li>
-              <li class="mx-2"><a href="my_major.html">My Major</a></li>
-            </ul>
-          </div>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my_journey.html">My Journey</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="my_major.html">My Major</a></li>
+          </ul>
         </nav>
       </header>
 
       <main>
         <h1>Milestones of My Journey</h1>
+
         <div class="timeline-container">
           <div class="timeline-item">
             <div class="timeline-icon">
@@ -81,7 +81,7 @@
 
           <div class="timeline-item">
             <div class="timeline-icon">
-              <img src="imgs/5.jpeg" alt="Wedding" data-bs-toggle="modal" data-bs-target="#weddingModal" />
+              <img src="imgs/5.webp" alt="Wedding" data-bs-toggle="modal" data-bs-target="#weddingModal" />
             </div>
             <div class="timeline-content">
               <h3>2024 - Marriage</h3>
@@ -96,6 +96,21 @@
             </div>
             <div class="timeline-content">
               <h3>2024 - SUNY Poly</h3>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <a href="https://duanstudio.com" target="_blank">
+                <img src="imgs/duan-studio-logo.jpg" alt="Duan Studio Logo" />
+              </a>
+            </div>
+            <div class="timeline-content">
+              <h3>2025 - Duan Studio</h3>
+              <p>
+                Established Duan Studio, focusing on web design, branding, and visual communication.
+                Worked with nonprofit organizations such as Asian Arts New York and WAADA.
+              </p>
             </div>
           </div>
         </div>
@@ -114,18 +129,19 @@
             <div id="weddingCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="imgs/1.jpeg" class="d-block w-100" alt="Wedding Photo 1" />
+                  <img src="imgs/1.webp" class="d-block w-100" alt="Wedding Photo 1" />
                 </div>
                 <div class="carousel-item">
-                  <img src="imgs/2.jpeg" class="d-block w-100" alt="Wedding Photo 2" />
+                  <img src="imgs/2.webp" class="d-block w-100" alt="Wedding Photo 2" />
                 </div>
                 <div class="carousel-item">
-                  <img src="imgs/3.jpeg" class="d-block w-100" alt="Wedding Photo 3" />
+                  <img src="imgs/3.webp" class="d-block w-100" alt="Wedding Photo 3" />
                 </div>
                 <div class="carousel-item">
-                  <img src="imgs/4.jpeg" class="d-block w-100" alt="Wedding Photo 4" />
+                  <img src="imgs/4.webp" class="d-block w-100" alt="Wedding Photo 4" />
                 </div>
               </div>
+
               <button class="carousel-control-prev" type="button" data-bs-target="#weddingCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -143,6 +159,7 @@
     <footer>
       <p>&copy; 2025 Lian Duan. All rights reserved.</p>
     </footer>
+
   </div>
 </body>
 </html>

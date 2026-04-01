@@ -42,28 +42,72 @@
         </nav>
       </header>
       
-      <main>
-        <h1>11,000 Miles: A New Beginning</h1>
-        <section id="journey">
-          <div class="image-container">
-            <img src="imgs/China-1.png" alt="China" class="clickable-map" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setModalImage('imgs/China-2.png','YUEYANG, HUNAN in CHINA')" />
-            <img src="imgs/MOVE HOUSE.png" alt="Moving Journey" class="moving-img" />
-            <img src="imgs/USA-1.png" alt="USA" class="clickable-map" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setModalImage('imgs/USA-2.png','ALBANY, NEW YORK in the USA')" />
-          </div>
+<main>
+  <section id="hero-journey">
+    <h1>11,000 Miles: A New Beginning</h1>
 
-          <!-- Modal -->
-          <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <img id="modalImage" src="" alt="Large view" class="img-fluid" />
-                  <p id="modalDescription" class="text-muted"></p>
-                </div>
-              </div>
-            </div>
+    <p class="justify" style="text-align: center; max-width: 720px; margin: 16px auto 32px;">
+      This journey represents more than just distance. It marks a transformation—
+      from my hometown in China to a new life in the United States, filled with
+      challenges, growth, and opportunities.
+    </p>
+  </section>
+
+ <section id="journey">
+  <div class="image-container">
+
+    <div class="journey-item">
+      <img
+        src="imgs/China-1.png"
+        alt="China"
+        class="clickable-map"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        onclick="setModalImage('imgs/China-2.png','YUEYANG, HUNAN in CHINA')"
+      />
+      <p class="journey-label">China</p>
+    </div>
+
+    <div class="journey-item journey-center">
+      <div class="road-line"></div>
+      <img src="imgs/MOVE HOUSE.png" alt="Moving Journey" class="moving-img" />
+      <p class="journey-label">Moving</p>
+    </div>
+
+    <div class="journey-item">
+      <img
+        src="imgs/USA-1.png"
+        alt="USA"
+        class="clickable-map"
+        data-bs-toggle="modal"
+        data-bs-target="#imageModal"
+        onclick="setModalImage('imgs/USA-2.png','ALBANY, NEW YORK in the USA')"
+      />
+      <p class="journey-label">United States</p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img id="modalImage" src="" alt="Large view" class="img-fluid" />
+            <p id="modalDescription" class="text-muted mt-2"></p>
           </div>
-        </section>
-      </main>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
     </div>
 
     <footer>
